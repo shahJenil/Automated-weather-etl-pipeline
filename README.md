@@ -1,18 +1,31 @@
-Weather Data ETL Pipeline
-Project Overview :
-This project implements an automated ETL (Extract, Transform, Load) pipeline for weather data processing. It fetches data from the Open-Meteo API, transforms it using Python, and loads it into a PostgreSQL database. The pipeline is orchestrated using Apache Airflow and containerized with Docker.
+# Automated ETL Pipeline for Weather Data Extraction
 
-The pipeline consists of three main components:
+Overview
 
-Extract: Fetches weather data from Open-Meteo API
-Transform: Processes and formats the raw weather data using Python
-Load: Stores the formatted data in PostgreSQL database
+This project implements an automated ETL pipeline to extract weather data from the Open-Meteo API, format it using Python, and load it into a PostgreSQL database. The workflow is orchestrated using Apache Airflow and deployed via Docker using Astronomer.
 
-Technologies Used
+# Features
 
-Apache Airflow: Workflow orchestration and scheduling
-Astronomer: Airflow deployment and management platform
-Docker: Containerization and environment management
-Python: Core programming language for DAG implementation and data processing
-PostgreSQL: Data warehouse for processed weather data
-Open-Meteo API: Source for weather data
+Extract weather data from the Open-Meteo API.
+
+Transform data into a structured format using Python.
+
+Load data into a PostgreSQL database.
+
+Fully automated ETL pipeline managed by Apache Airflow.
+
+Dockerized deployment using Astronomer.
+
+# Technologies Used
+
+Apache Airflow (for workflow orchestration)
+
+Docker (for containerized deployment)
+
+Astronomer (for managing Airflow deployment)
+
+Python (for data transformation and DAG scripting)
+
+PostgreSQL (for storing processed data)
+
+Open-Meteo API (for weather data extraction)
